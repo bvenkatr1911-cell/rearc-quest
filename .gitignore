@@ -1,0 +1,26 @@
+# Python venv
+.venv/
+__pycache__/
+
+# Lambda deps (we don't want site-packages in Git)
+lambda_ingest/certifi*/
+lambda_ingest/charset_normalizer*/
+lambda_ingest/idna*/
+lambda_ingest/requests*/
+lambda_ingest/urllib3*/
+lambda_ingest/bin/
+
+# Local outputs
+output.json
+output_ingest.json
+terraform/output.json
+terraform/output_ingest.json
+src/us_population_2013_2018.json
+
+# Terraform local stuff
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
